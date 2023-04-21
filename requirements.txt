@@ -1,3 +1,6 @@
+torch==1.9.0
+PyTorch3D==0.6.1
+torchvision==0.10.0
 lmdb
 numpy
 ninja

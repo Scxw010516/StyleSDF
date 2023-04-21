@@ -65,10 +65,10 @@ def prepare(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Preprocess images for model training")
-    parser.add_argument("--size", type=str, default="64,512,1024", help="resolutions of images for the dataset")
+    parser.add_argument("--size", type=str, default="64,512,1024", help="数据集的图像分辨率resolutions of images for the dataset")
     parser.add_argument("--n_worker", type=int, default=32, help="number of workers for preparing dataset")
     parser.add_argument("--resample", type=str, default="lanczos", help="resampling methods for resizing images")
-    parser.add_argument("--out_path", type=str, default="datasets/FFHQ", help="Target path of the output lmdb dataset")
+    parser.add_argument("--out_path", type=str, default="datasets/Ear", help="Target path of the output lmdb dataset")
     parser.add_argument("in_path", type=str, help="path to the input image dataset")
     args = parser.parse_args()
 
