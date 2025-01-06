@@ -81,5 +81,7 @@ if __name__ == "__main__":
 
     imgset = datasets.ImageFolder(args.in_path)
 
-    with lmdb.open(args.out_path, map_size=1024 ** 4, readahead=False) as env:
+    with lmdb.open(args.out_path, map_size=1024 ** 3, readahead=False) as env:
         prepare(env, imgset, args.n_worker, sizes=sizes, resample=resample)
+
+    print('\nfinish')

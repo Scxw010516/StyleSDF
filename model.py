@@ -495,6 +495,7 @@ class Decoder(nn.Module):
                 )
             )
 
+
         self.style = nn.Sequential(*layers)
 
         # decoder network
@@ -562,7 +563,7 @@ class Decoder(nn.Module):
         return latent
 
     def get_latent(self, input):
-        return self.style(input)
+        return self. style(input)
 
     def styles_and_noise_forward(self, styles, noise, inject_index=None, truncation=1,
                                  truncation_latent=None, input_is_latent=False,
